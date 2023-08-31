@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Megalithic Craft</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">	
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="../https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- owl stylesheets --> 
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script>
+        function redirect() {
+            var selectedOption = document.querySelector('input[name="apses"]:checked').value;
+            if (selectedOption === 'Hagar Qim') {
+                window.location.href = 'realtemple/hagarqim.html';
+            } else if (selectedOption === 'Mnajdra') {
+                window.location.href = 'realtemple/mnajdra.html';
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- header section start -->
+    <div class="header_section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo"><a href="../index.html"><img src="../images/logo.png"></a></div>
+        </nav>
+    </div>
+    <!-- header section end -->
+    <input class="checkbox" type="checkbox" name="general" id="general">
+	<div class="background-color"></div>
+	<div class="section over-hide z-bigger">
+        <div class="container pb-5">
+            <div class="row justify-content-center pb-5">
+				<div class="col-12 pt-5">
+					<p class="mb-4 pb-2">Choose the temple whose model you want to see</p>
+				</div>
+				<div class="col-12 pb-5">
+					<input class="checkbox-tools" type="radio" name="apses" id="tool-1" value="Hagar Qim">
+					<label class="for-checkbox-tools" for="tool-1">
+                        <img src='../images/hagarqim2.png'></img>
+						<br></br>Hagar Qim
+					</label><!--
+					--><input class="checkbox-tools" type="radio" name="apses" id="tool-2" value="Mnajdra">
+					<label class="for-checkbox-tools" for="tool-2">
+                        <img src='../images/manajdra.png'></img>
+						<br></br>Mnajdra</br></br>
+					</label><!--
+					--><!--<input class="checkbox-tools" type="radio" name="apses" id="tool-3" value="7">
+					<label class="for-checkbox-tools" for="tool-3">
+                        <img src='../images/3.png'></img>
+						<br></br>7
+					</label>-->
+                    <div class="see_main">
+                        <div><button class="see_bt" onclick="redirect()">See model</button></div>
+                    </div>
+                    <div class="see_main">
+                        <a href="../index.html#realtemple"><button class="see_bt">&lt;&lt; Back</button></a>
+                    </div>
+				</div>	
+            </div>
+        </div>
+    </div>
+</body>
+</html>
